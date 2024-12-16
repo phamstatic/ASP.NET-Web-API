@@ -26,7 +26,7 @@ namespace EmployeeAdminPortal.Controllers
         }
 
         [HttpGet]
-        [Route("{id:guid")]
+        [Route("{id:guid}")]
         public IActionResult GetEmployeeById(Guid id)
         {
             var employee = DbContext.Employees.Find(id);
